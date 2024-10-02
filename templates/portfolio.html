@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Showcase</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>My Technical Projects</h1>
+    </header>
+
+   <section id="projects">
+        <div class="project">
+            <button onclick="window.location.href='/employee_management'">
+                <h2>Employee Management System</h2>
+
+                <p>C#, SQL Server, Windows Forms application with features like employee tracking and clock-in systems.</p>
+            </button>
+        </div>
+       <div class="project">
+            <button onclick="window.location.href='/chatbot_system'">
+                <h2>Custom Chatbot</h2>
+
+                <p>Chatbot developed using Python, MySQL, and the OpenAI API, with custom data populated into the database.</p>
+            </button>
+        </div>
+
+        <div class="project">
+            <button onclick="window.location.href='/turtle_graphics'">
+                <h2>University Turtle Graphics System</h2>
+
+                <p>Java application showcasing graphical algorithms and custom turtle graphics programming.</p>
+            </button>
+        </div>
+    </section>
+</body>
+</html>

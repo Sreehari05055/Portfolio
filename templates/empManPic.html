@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='empMan.css') }}"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <header>
+        <h1>Employee Management System</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home Page</a></li>
+                <li><a href="#startWork">Start Work Page</a></li>
+                <li><a href="#clockIn">Clock-in Page</a></li>
+                <li><a href="#verifyAdmin">Verify Admin Page</a></li>
+                <li><a href="#admin">Management Info/Admin Page</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="content-section active">
+            <h2>The Home Page</h2>
+                <img src="{{ url_for('static', filename='images/Home.png') }}" alt="Home Page" class="section-image">
+            <h3>Description</h3>
+            <p>The Home Page features two options: the Start/End Work and the Management Info/Admin Page. </p>
+        </section>
+
+        <section id="startWork" class="content-section">
+            <h2>Clock Page</h2>
+             <img src="{{ url_for('static', filename='images/start-work.png') }}" alt="Home Page" class="section-image">
+            <h3>Description</h3>
+            <p> Clicking on the Start/End Work option redirects you to this page.
+                On this page, you can Start or End your work shift and log your clock-in time.</p>
+        </section>
+        <section id="clockIn" class="content-section">
+            <h2>Clock-in Code</h2>
+             <img src="{{ url_for('static', filename='images/ClockinVerification.png') }}" alt="Home Page" class="section-image">
+            <h3>Description</h3>
+            <p>You will need to enter your unique employee code, which will then initiate or conclude your shift.</p>
+        </section>
+
+        <section id="admin" class="content-section">
+            <h2>Management Info/Admin Page</h2>
+             <img src="{{ url_for('static', filename='images/AdminPage.png') }}" alt="Home Page" class="section-image">
+            <h3>Description</h3>
+            <p>This section contains information about management and administrative tasks and is accessible only to admins or authorized personnel.</p>
+        <button class="check-functions-btn" onclick="window.location.href='/admin-functions'">Check Out Functions</button>
+        </section>
+
+        <section id="verifyAdmin" class="content-section">
+            <h2>Verify Admin Page</h2>
+             <img src="{{ url_for('static', filename='images/AdminVerification.png') }}" alt="Home Page" class="section-image">
+            <h3>Description</h3>
+            <p>Clicking 'Management Info' on the Home Page will bring up this page, where you need to enter your admin ID (the employee code of the admin).</p>
+
+        </section>
+
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>

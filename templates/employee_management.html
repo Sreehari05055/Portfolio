@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='empManStyle.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Employee Management System</h1>
+    </header>
+
+    <section class="project-overview">
+        <div class="content">
+            <h2>Overview</h2>
+            <p>
+                The Employee Management System is a robust Windows Forms application built using C# and integrated with a SQL Server database. It is designed to streamline the process of managing employee information, work schedules, payroll, and attendance. This project showcases my proficiency in object-oriented programming, database management, and GUI application development.
+            </p>
+        </div>
+
+    </section>
+
+    <section class="features">
+        <h2>Key Features</h2>
+        <ul>
+            <li><strong>Employee Database Management:</strong> Store and retrieve detailed employee information such as personal details, job roles, and work history.</li>
+            <li><strong>Work Schedule:</strong> Generate, modify, and view employee work schedules in real-time, ensuring smooth operations.</li>
+            <li><strong>Payroll Integration:</strong> Calculate employee wages based on hours worked.</li>
+            <li><strong>Clock-In/Out System:</strong> Tracks employee attendance and working hours, allowing for accurate time tracking and reporting.</li>
+        </ul>
+    </section>
+
+    <section class="technology">
+        <h2>Technologies Used</h2>
+        <ul>
+            <li><strong>Programming Language:</strong> C#</li>
+            <li><strong>Database:</strong> SQL Server</li>
+            <li><strong>Framework:</strong> Windows Forms</li>
+            <li><strong>Integration:</strong> Email notifications for work schedules and payroll updates</li>
+        </ul>
+    </section>
+
+    <section class="challenges">
+        <h2>Challenges & Solutions</h2>
+        <p>
+            One of the major challenges was implementing a scalable clock-in/clock-out system. I designed a reliable system that tracks time and handles scenarios with seamless data storage in SQL Server. Additionally, ensuring real-time payroll updates required optimizing SQL queries for performance efficiency.
+        </p>
+    </section>
+    <section class="future-updates">
+        <h2>Further Updates</h2>
+        <p>
+          One of the key updates I plan to implement in the future is a tax deduction method. However, due to the complexity of the calculations involved, I am unable to incorporate it at this time.
+        </p>
+    </section>
+    <section class="view-project">
+    <button onclick="window.location.href='/empManPic'" class="view-project-btn">View the Project</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>

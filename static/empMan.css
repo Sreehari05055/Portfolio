@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Light background for a clean look */
+}
+
+header {
+    background-color: #0056b3; /* Header background color */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.navbar {
+    margin-top: 1rem; /* Space between header and navbar */
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center navbar items */
+}
+
+.navbar ul li {
+    margin: 0 1rem; /* Space between navbar items */
+}
+
+.navbar a {
+    background-color: #007bff; /* Button background color */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.content-section {
+    display: none; /* Hide all sections by default */
+    padding: 2rem;
+    background-color: white; /* Section background color */
+    margin: 1rem;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Show the active section when its ID is targeted */
+.content-section:target {
+    display: block; /* Show the targeted section */
+}
+
+/* Show the home section by default */
+#home:target {
+    display: block; /* Show home section */
+}
+
+/* Image styling */
+.section-image {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure images are block elements */
+    margin: 1rem auto; /* Center the image with auto margins */
+}
+
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #f1f1f1; /* Light footer background */
+}
+.check-functions-btn {
+    padding: 10px 20px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 15px; /* Adds space above the button */
+}
+
+.check-functions-btn:hover {
+    background-color: #003f7f;
+}
+
+.check-functions-btn:active {
+    background-color: #002a56;
+}
+#function-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the content horizontally */
+    justify-content: center; /* Centers the content vertically */
+    min-height: 60vh; /* Adjust the minimum height to center within the viewport */
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Image styling */
+.function-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    display: block; /* Ensures the image behaves like a block element */
+}
