@@ -21,10 +21,11 @@ def turtle_graphics():
 def emp_display():
     return render_template('empManPic.html')
 
+
 @app.route('/admin-functions')
 def admin_func():
     return render_template('admin-functions.html')
 
-
+#main method
 if __name__ == '__main__':
     app.run(debug=True)
