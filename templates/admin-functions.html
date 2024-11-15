@@ -5,70 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Functions Page</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='empMan.css') }}">
-    <style>
-        /* Basic Reset */
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
 
-        /* Body styling */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f4f4f4; /* Light background for the body */
-        }
-
-        /* Header styling */
-        header {
-            background-color: #0056b3; /* Blue background */
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        h1 {
-            margin: 0;
-        }
-
-        /* Button container styling */
-        .button-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center; /* Centers the buttons */
-            gap: 10px; /* Space between buttons */
-            margin: 20px 0; /* Space above and below the buttons */
-        }
-
-        /* Button styling */
-        .admin-button {
-            padding: 10px 20px;
-            background-color: #007bff; /* Button color */
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-            font-size: 1rem; /* Adjust font size */
-        }
-
-        .admin-button:hover {
-            background-color: #0056b3; /* Darker blue on hover */
-        }
-
-        /* Section content styling */
-        .section-content {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        /* Styling for description */
-        #function-description {
-            margin-top: 10px;
-            font-size: 1.1rem; /* Slightly larger font for better readability */
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -94,7 +31,7 @@
 
     <div id="function-content" class="section-content">
         <h2 id="function-title">Select a Function</h2>
-          <img src="/static/images/AdminPage.png" alt="Description of image" style="width: 600px; height: auto; display: block; margin: 0 auto;">
+          <img src="static/AdminPage.png" alt="Description of image" style="width: 600px; height: auto; display: block; margin: 0 auto;">
 
         <!-- Image container for one or two images -->
         <div class="image-container">
@@ -121,69 +58,69 @@
                 case 'function1':
                     title = 'Add Employee';
                     description = 'This allows adding new employee details to the system.';
-                    imageUrl1 = '{{ url_for("static", filename="images/AddEmp.png") }}';
+                    imageUrl1 = '{{ url_for("static", filename="AddEmp.png") }}';
                     break;
                 case 'function2':
                     title = 'Delete Employee';
                     description = 'You can remove an employee from the system.';
-                    imageUrl1 = '{{ url_for("static", filename="images/DeleteEmp.png") }}';
+                    imageUrl1 = '{{ url_for("static", filename="DeleteEmp.png") }}';
                     break;
                 case 'function3':
                     title = 'Update Employee Details';
                     description = 'This section allows updating the information of an existing employee.';
-                    imageUrl1 = '{{ url_for("static", filename="images/UpdateEmp.png") }}';
+                    imageUrl1 = '{{ url_for("static", filename="UpdateEmp.png") }}';
                     break;
                 case 'function4':
                     title = 'Add Work Schedule';
                     description = 'Add the work schedule for employees.';
-                    imageUrl1 = '{{ url_for("static", filename="images/CreateWorkSche.png") }}';
-                    imageUrl2 = '{{ url_for("static", filename="images/CreateWorkSche2.png") }}';  // Two images for this function
+                    imageUrl1 = '{{ url_for("static", filename="CreateWorkSche.png") }}';
+                    imageUrl2 = '{{ url_for("static", filename="CreateWorkSche2.png") }}';  // Two images for this function
                     break;
                 case 'function5':
                     title = 'View Work Schedule';
                     description = 'View work schedule for employees.';
-                    imageUrl1 = '{{ url_for("static", filename="images/ViewWorkSche.png") }}';
+                    imageUrl1 = '{{ url_for("static", filename="ViewWorkSche.png") }}';
                     break;
                 case 'function6':
                     title = 'Send Work Schedule';
                     description = 'Send work schedule for employees.';
-                    imageUrl1 = '{{ url_for("static", filename="images/SendRota.png") }}';
+                    imageUrl1 = '{{ url_for("static", filename="SendRota.png") }}';
                     break;
                 case 'function7':
                     title = 'Save Weekly Schedule (Rota) Date';
                     description = 'Set a date to save the work schedule as a text file before it being deleted from the database.';
-                    imageUrl1 = '{{ url_for("static", filename="images/SaveRotaSche.png") }}';
+                    imageUrl1 = '{{ url_for("static", filename="SaveRotaSche.png") }}';
                     break;
                 case 'function8':
                     title = 'Set Admin';
                     description = 'Set an admin';
-                    imageUrl1 = '{{ url_for("static", filename="images/SetAdmin.png") }}';
+                    imageUrl1 = '{{ url_for("static", filename="SetAdmin.png") }}';
                     break;
                 case 'function9':
                     title = 'Remove Admin';
                     description = 'Remove an admin';
-                    imageUrl1 = '{{ url_for("static", filename="images/RemoveAdmin.png") }}';
+                    imageUrl1 = '{{ url_for("static", filename="RemoveAdmin.png") }}';
                     break;
                 case 'function10':
                     title = 'Check Working Employees';
                     description = 'Checks for currently working employees and the second image shows a pop up which shows up if theres no one working at the moment.';
-                    imageUrl1 = '{{ url_for("static", filename="images/CheckEmpStat1.png") }}';
-                    imageUrl2 = '{{ url_for("static", filename="images/CheckEmpStat2.png") }}';
+                    imageUrl1 = '{{ url_for("static", filename="CheckEmpStat1.png") }}';
+                    imageUrl2 = '{{ url_for("static", filename="CheckEmpStat2.png") }}';
                     break;
                 case 'function11':
                     title = 'Get Employee Details';
                     description = 'Displays a list of details of all employees working';
-                    imageUrl1 = '{{ url_for("static", filename="images/GetEmpDetails.png") }}';
+                    imageUrl1 = '{{ url_for("static", filename="GetEmpDetails.png") }}';
                     break;
                 case 'function12':
                     title = 'View/Edit PaySlip';
-                    description = 'Displays a list of details of all employees hours worked and pay details';
-                    imageUrl1 = '{{ url_for("static", filename="images/EditPayDetails.png") }}';
+                    description = 'Displays a list of details of all employees hours worked and pay details.The Total Pay column can be edited in real time, allowing for any corrections to be made, with the updated value instantly reflected in the database.';
+                    imageUrl1 = '{{ url_for("static", filename="EditPayDetails.png") }}';
                     break;
                 case 'function13':
                     title = 'Schedule PaySlip';
                     description = 'Schedule a day for the payslip to be sent via email to the employees';
-                    imageUrl1 = '{{ url_for("static", filename="images/SendRotaSche.png") }}';
+                    imageUrl1 = '{{ url_for("static", filename="SendRotaSche.png") }}';
                     break;
                 default:
                     title = 'Select a Function';
