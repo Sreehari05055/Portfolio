@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Functions Page</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='empMan.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/empMan.css') }}">
 
 </head>
 <body>
@@ -31,7 +31,7 @@
 
     <div id="function-content" class="section-content">
         <h2 id="function-title">Select a Function</h2>
-          <img src="static/AdminPage.png" alt="Description of image" style="width: 600px; height: auto; display: block; margin: 0 auto;">
+          <img src="static/images/AdminPage.png" alt="Description of image" style="width: 600px; height: auto; display: block; margin: 0 auto;">
 
         <!-- Image container for one or two images -->
         <div class="image-container">
@@ -46,7 +46,7 @@
     </div>
 
     <script>
-        // Function to show the selected function details
+         // Function to show the selected function details
         function showFunction(functionId) {
             let title = '';
             let description = '';
@@ -58,69 +58,69 @@
                 case 'function1':
                     title = 'Add Employee';
                     description = 'This allows adding new employee details to the system.';
-                    imageUrl1 = '{{ url_for("static", filename="AddEmp.png") }}';
+                    imageUrl1 = '{{ url_for("static", filename="images/AddEmp.png") }}';
                     break;
                 case 'function2':
                     title = 'Delete Employee';
                     description = 'You can remove an employee from the system.';
-                    imageUrl1 = '{{ url_for("static", filename="DeleteEmp.png") }}';
+                    imageUrl1 = '{{ url_for("static", filename="images/DeleteEmp.png") }}';
                     break;
                 case 'function3':
                     title = 'Update Employee Details';
                     description = 'This section allows updating the information of an existing employee.';
-                    imageUrl1 = '{{ url_for("static", filename="UpdateEmp.png") }}';
+                    imageUrl1 = '{{ url_for("static", filename="images/UpdateEmp.png") }}';
                     break;
                 case 'function4':
                     title = 'Add Work Schedule';
                     description = 'Add the work schedule for employees.';
-                    imageUrl1 = '{{ url_for("static", filename="CreateWorkSche.png") }}';
-                    imageUrl2 = '{{ url_for("static", filename="CreateWorkSche2.png") }}';  // Two images for this function
+                    imageUrl1 = '{{ url_for("static", filename="images/CreateWorkSche.png") }}';
+                    imageUrl2 = '{{ url_for("static", filename="images/CreateWorkSche2.png") }}';  // Two images for this function
                     break;
                 case 'function5':
                     title = 'View Work Schedule';
                     description = 'View work schedule for employees.';
-                    imageUrl1 = '{{ url_for("static", filename="ViewWorkSche.png") }}';
+                    imageUrl1 = '{{ url_for("static", filename="images/ViewWorkSche.png") }}';
                     break;
                 case 'function6':
                     title = 'Send Work Schedule';
                     description = 'Send work schedule for employees.';
-                    imageUrl1 = '{{ url_for("static", filename="SendRota.png") }}';
+                    imageUrl1 = '{{ url_for("static", filename="images/SendRota.png") }}';
                     break;
                 case 'function7':
                     title = 'Save Weekly Schedule (Rota) Date';
                     description = 'Set a date to save the work schedule as a text file before it being deleted from the database.';
-                    imageUrl1 = '{{ url_for("static", filename="SaveRotaSche.png") }}';
+                    imageUrl1 = '{{ url_for("static", filename="images/SaveRotaSche.png") }}';
                     break;
                 case 'function8':
                     title = 'Set Admin';
                     description = 'Set an admin';
-                    imageUrl1 = '{{ url_for("static", filename="SetAdmin.png") }}';
+                    imageUrl1 = '{{ url_for("static", filename="images/SetAdmin.png") }}';
                     break;
                 case 'function9':
                     title = 'Remove Admin';
                     description = 'Remove an admin';
-                    imageUrl1 = '{{ url_for("static", filename="RemoveAdmin.png") }}';
+                    imageUrl1 = '{{ url_for("static", filename="images/RemoveAdmin.png") }}';
                     break;
                 case 'function10':
                     title = 'Check Working Employees';
                     description = 'Checks for currently working employees and the second image shows a pop up which shows up if theres no one working at the moment.';
-                    imageUrl1 = '{{ url_for("static", filename="CheckEmpStat1.png") }}';
-                    imageUrl2 = '{{ url_for("static", filename="CheckEmpStat2.png") }}';
+                    imageUrl1 = '{{ url_for("static", filename="images/CheckEmpStat1.png") }}';
+                    imageUrl2 = '{{ url_for("static", filename="images/CheckEmpStat2.png") }}';
                     break;
                 case 'function11':
                     title = 'Get Employee Details';
                     description = 'Displays a list of details of all employees working';
-                    imageUrl1 = '{{ url_for("static", filename="GetEmpDetails.png") }}';
+                    imageUrl1 = '{{ url_for("static", filename="images/GetEmpDetails.png") }}';
                     break;
                 case 'function12':
                     title = 'View/Edit PaySlip';
                     description = 'Displays a list of details of all employees hours worked and pay details.The Total Pay column can be edited in real time, allowing for any corrections to be made, with the updated value instantly reflected in the database.';
-                    imageUrl1 = '{{ url_for("static", filename="EditPayDetails.png") }}';
+                    imageUrl1 = '{{ url_for("static", filename="images/EditPayDetails.png") }}';
                     break;
                 case 'function13':
                     title = 'Schedule PaySlip';
                     description = 'Schedule a day for the payslip to be sent via email to the employees';
-                    imageUrl1 = '{{ url_for("static", filename="SendRotaSche.png") }}';
+                    imageUrl1 = '{{ url_for("static", filename="images/SendRotaSche.png") }}';
                     break;
                 default:
                     title = 'Select a Function';
@@ -154,7 +154,7 @@
     </script>
 
     <footer>
-       <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+       <p>&copy;2024 My Portfolio. All rights reserved.</p>
         <p>Designed and developed by Sreehari Anukumar.</p>
     </footer>
 </body>

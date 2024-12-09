@@ -4,6 +4,70 @@ body {
     padding: 0;
     background-color: #f8f9fa; /* Light background for a clean look */
 }
+ * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Body styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4; /* Light background for the body */
+        }
+
+        /* Header styling */
+        header {
+            background-color: #0056b3; /* Blue background */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Button container styling */
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Centers the buttons */
+            gap: 10px; /* Space between buttons */
+            margin: 20px 0; /* Space above and below the buttons */
+        }
+
+        /* Button styling */
+        .admin-button {
+            padding: 10px 20px;
+            background-color: #007bff; /* Button color */
+            color:  #FFD700;
+            font-family: 'Patrick Hand', sans-serif;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-size: 1rem; /* Adjust font size */
+        }
+
+        .admin-button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+
+        /* Section content styling */
+        .section-content {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Styling for description */
+        #function-description {
+            margin-top: 10px;
+            font-size: 1.1rem; /* Slightly larger font for better readability */
+        }
+h1 {
+    font-family: 'Patrick Hand', sans-serif;
+    font-size: 3em;
+    text-align: center;
+    color: #FFD700;
+}
 
 header {
     background-color: #0056b3; /* Header background color */
@@ -29,7 +93,7 @@ header {
 
 .navbar a {
     background-color: #007bff; /* Button background color */
-    color: white;
+    color:  #FFD700;
     text-decoration: none;
     border-radius: 5px;
     padding: 0.5rem 1rem;
@@ -76,7 +140,9 @@ footer {
 .check-functions-btn {
     padding: 10px 20px;
     background-color: #0056b3;
-    color: white;
+    color:  #FFD700;
+    font-size: 1em;
+    font-family: 'Patrick Hand', sans-serif;
     border: none;
     border-radius: 5px;
     cursor: pointer;
