@@ -4,14 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Showcase</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
     <header>
-        <h1>My Technical Projects</h1>
+        <h1>My Projects</h1>
     </header>
 
    <section id="projects">
+       <div class="project">
+            <button onclick="window.location.href='/sa-tool'">
+                <h2>CV & Cover Letter Enhancement Tool</h2>
+
+                <p>A Django application designed to enhance resumes and cover letters with AI-driven customization.</p>
+            </button>
+        </div>
         <div class="project">
             <button onclick="window.location.href='/employee_management'">
                 <h2>Employee Management System</h2>
@@ -28,5 +35,10 @@
             </button>
         </div>
     </section>
+    <footer>
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+        <p>Designed and developed by Sreehari Anukumar.</p>
+        <p> <a href="https://github.com/Sreehari05055/Portfolio.git" target="_blank">View Portfolio Source on GitHub</a>
+    </footer>
 </body>
 </html>

@@ -5,7 +5,7 @@ body {
 }
 
 header {
-    background-color: #0056b3;
+    background-color:#000000;
     color: white;
     text-align: center;
     padding: 2rem;
@@ -73,11 +73,19 @@ section {
     font-size: 1.5rem;
     flex-grow: 1; /* Ensures the title and content fill the available space */
 }
+.wrapper {
+    min-height: calc(100vh - 100px); /* Adjust based on your footer height */
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Arrange children in a column */
+}
 
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
-    width: 100%;
+    position: fixed; /* Make the footer fixed */
+    bottom: 0;      /* Position it at the bottom */
+    left: 0;        /* Align to the left */
+    right: 0;       /* Align to the right */
+    height: 100px;  /* Set a fixed height */
+    background-color: #f1f1f1; /* Optional: set a background color */
+    text-align: center; /* Center the text */
+    padding: 20px; /* Opti /* Optional: add padding */
 }

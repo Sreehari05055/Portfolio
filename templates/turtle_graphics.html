@@ -1,10 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turtle Graphics</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/turtlegraphics.css') }}">
 </head>
 <body>
+    <header>
+        <h1>The University Turtle Graphics System</h1>
+    </header>
 
+    <section class="project-overview">
+        <div class="content">
+            <h2>Overview</h2>
+            <p>
+                The GraphicSystem is a Java-based graphical application that builds on the OOPGraphics framework to provide an interactive canvas for drawing and manipulating shapes. The system allows users to issue commands that control a virtual drawing tool, similar to a turtle graphics system, providing functionalities to create various geometric figures and manipulate the drawing environment.
+            </p>
+        </div>
+
+    </section>
+
+    <section class="features">
+        <h2>Key Features</h2>
+        <ul>
+            <li><strong>Graphical User Interface (GUI):</strong> The application uses Java's JFrame to create a window where the user can interact with the drawing canvas. This GUI provides real-time visual feedback as users issue commands.</li>
+            <li><strong>Command Processing:</strong> The system can process multiple commands through its processCommand method. The available commands include:<br>
+                            Movement commands: turnleft, turnright, forward, backward<br>
+                            Shape commands: square, triangle, righttriangle, mandala<br>
+                            Customization commands: penwidth, pencolour, bgc (background color)<br>
+                            Utility commands: clear to clear the canvas, save to save the canvas as an image, and load to load an existing image.<br></li>
+            <li><strong>Saving and Loading:</strong> Users can save their current canvas to a file in an image format using the saveImg() method. They can also save drawing commands to a text file for later execution using the toWrite() method.
+                                                     The system offers a prompt to save the canvas before clearing it. The load command allows users to reload previously saved images.<br></li>
+            <li><strong>Error Handling and User Interaction:</strong>The system ensures user interaction through dialog boxes for confirmations (e.g., before clearing the canvas) and prompts for file names when saving the canvas.
+                                                                     It includes exception handling for input errors or failed operations, ensuring a smooth user experience.</li>
+        </ul>
+    </section>
+
+    <section class="technology">
+        <h2>Technologies Used</h2>
+<ul>
+    <li><strong>Programming Language:</strong> Java</li>
+    <li><strong>Framework:</strong> Java Swing for GUI</li>
+    <li><strong>Libraries:</strong> AWT (Abstract Window Toolkit), javax.imageio for image processing</li>
+    <li><strong>Custom Framework:</strong> OOPGraphics (extends built-in capabilities for graphical commands)</li>
+    <li><strong>File Handling:</strong> BufferedImage, FileWriter, ImageIO for saving/loading images and commands</li>
+</ul>
+    </section>
+
+   <section class="challenges">
+    <h2>Challenges & Solutions</h2>
+    <p>
+        A major challenge was implementing the save and load functionality for the drawing canvas. Initially, managing image data and command history in an efficient and user-friendly way was difficult. I overcame this by utilizing `BufferedImage` and `FileWriter` for image saving and command logging, ensuring integration between the graphical interface and file handling.
+    </p>
+</section>
+
+    <section>
+    <h2>In-Depth Analysis</h2>
+    <p>
+        <p>For a detailed explanation of the University project visit <a href="https://youtu.be/FR3g4ZSliUU" target="_blank">this link</a>.</p>
+
+</section>
+    <footer>
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+        <p>Designed and developed by Sreehari Anukumar.</p>
+        <p> <a href="https://github.com/Sreehari05055/JavaProjects.git" target="_blank">View Source(Turtle Graphics) on GitHub</a>
+        <p> <a href="https://github.com/Sreehari05055/Portfolio.git" target="_blank">View Portfolio Source on GitHub</a>
+    </footer>
 </body>
 </html>

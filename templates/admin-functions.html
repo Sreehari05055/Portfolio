@@ -4,71 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Functions Page</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='empMan.css') }}">
-    <style>
-        /* Basic Reset */
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/empMan.css') }}">
 
-        /* Body styling */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f4f4f4; /* Light background for the body */
-        }
-
-        /* Header styling */
-        header {
-            background-color: #0056b3; /* Blue background */
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        h1 {
-            margin: 0;
-        }
-
-        /* Button container styling */
-        .button-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center; /* Centers the buttons */
-            gap: 10px; /* Space between buttons */
-            margin: 20px 0; /* Space above and below the buttons */
-        }
-
-        /* Button styling */
-        .admin-button {
-            padding: 10px 20px;
-            background-color: #007bff; /* Button color */
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-            font-size: 1rem; /* Adjust font size */
-        }
-
-        .admin-button:hover {
-            background-color: #0056b3; /* Darker blue on hover */
-        }
-
-        /* Section content styling */
-        .section-content {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        /* Styling for description */
-        #function-description {
-            margin-top: 10px;
-            font-size: 1.1rem; /* Slightly larger font for better readability */
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -94,7 +31,7 @@
 
     <div id="function-content" class="section-content">
         <h2 id="function-title">Select a Function</h2>
-          <img src="/static/images/AdminPage.png" alt="Description of image" style="width: 600px; height: auto; display: block; margin: 0 auto;">
+          <img src="static/images/AdminPage.png" alt="Description of image" style="width: 600px; height: auto; display: block; margin: 0 auto;">
 
         <!-- Image container for one or two images -->
         <div class="image-container">
@@ -177,7 +114,7 @@
                     break;
                 case 'function12':
                     title = 'View/Edit PaySlip';
-                    description = 'Displays a list of details of all employees hours worked and pay details';
+                    description = 'Displays a list of details of all employees hours worked and pay details.The Total Pay column can be edited in real time, allowing for any corrections to be made, with the updated value instantly reflected in the database.';
                     imageUrl1 = '{{ url_for("static", filename="images/EditPayDetails.png") }}';
                     break;
                 case 'function13':
@@ -219,6 +156,8 @@
     <footer>
        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
         <p>Designed and developed by Sreehari Anukumar.</p>
+         <p> <a href="https://github.com/Sreehari05055/CsharpProjects.git" target="_blank">View Source(Employee Management System) on GitHub</a>
+         <p> <a href="https://github.com/Sreehari05055/Portfolio.git" target="_blank">View Portfolio Source on GitHub</a>
     </footer>
 </body>
 </html>
