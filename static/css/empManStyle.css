@@ -106,11 +106,12 @@ section {
 
 
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    position: fixed; /* Make the footer fixed */
+    bottom: 0;      /* Position it at the bottom */
+    left: 0;        /* Align to the left */
+    right: 0;       /* Align to the right */
+    height: 100px;  /* Set a fixed height */
+    background-color: #f1f1f1;
+    text-align: center; /* Center the text */
+    padding: 20px;
 }

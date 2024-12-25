@@ -132,10 +132,14 @@ header {
 }
 
 footer {
-    text-align: center;
-    margin-top: 2rem;
-    padding: 1rem;
-    background-color: #f1f1f1; /* Light footer background */
+    position: fixed; /* Make the footer fixed */
+    bottom: 0;      /* Position it at the bottom */
+    left: 0;        /* Align to the left */
+    right: 0;       /* Align to the right */
+    height: 100px;  /* Set a fixed height */
+    background-color: #f1f1f1;
+    text-align: center; /* Center the text */
+    padding: 20px;
 }
 .check-functions-btn {
     padding: 10px 20px;

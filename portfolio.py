@@ -5,8 +5,11 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return render_template('portfolio.html')
+    return render_template('home.html')
 
+@app.route('/portfolio')
+def portfolio():
+    return render_template('portfolio.html')
 
 @app.route('/employee_management')
 def employee_management():
