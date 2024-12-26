@@ -1,37 +1,16 @@
+@import url('/static/css/toolkit.css');
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     background-color: #f0f2f5;
 }
-h1 {
-    font-family: 'Patrick Hand', sans-serif;
-    font-size: 3em;
-    text-align: center;
-    color: #FFD700;
-}
-
 
 header {
-    background-color:#000000;
+    background-color:#282c34;
     color: white;
     text-align: center;
-    padding: 2rem;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+    padding: 2rem 0;
 }
 
 section {
@@ -69,12 +48,6 @@ section {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.project img {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 1rem;
-}
-
 .project h2 {
     margin: 0 0 1rem;
     font-size: 1.5rem;
@@ -87,7 +60,7 @@ footer {
     left: 0;        /* Align to the left */
     right: 0;       /* Align to the right */
     height: 100px;  /* Set a fixed height */
-    background-color: #f1f1f1;
+    background-color: #f1f1f1; /* Optional: set a background color */
     text-align: center; /* Center the text */
     padding: 20px;
 }
