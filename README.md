@@ -20,7 +20,7 @@ This portfolio website showcases my technical projects and skills in programming
 
 1. Clone the repository:  
    ```bash  
-   git clone https://github.com/yourusername/yourrepository.git
+   git clone https://github.com/Sreehari05055/Portfolio.git
 2. Install Dependencies:  
    ```bash  
    pip install -r requirements.txt
