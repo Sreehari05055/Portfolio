@@ -16,12 +16,6 @@ def portfolio():
 def employee_management():
     return render_template('employee_management.html')
 
-
-@app.route('/turtle_graphics')
-def turtle_graphics():
-    return render_template('turtle_graphics.html')
-
-
 @app.route('/sa-tool')
 def sa_func():
     return render_template('sa-application.html')
